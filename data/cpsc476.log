@@ -1,0 +1,26 @@
+/*C4*/SET SCHEMA PUBLIC
+ DROP TABLE IF EXISTS blog
+ Create table blog( blogid int, username varchar(40), title varchar(100), description varchar(1000), date varchar(50))
+INSERT INTO BLOG VALUES(1,'Thilak','What is Java?','Java is a general-purpose computer programming language that is concurrent,class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture As of 2015, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers.','Sat Oct 24 09:37:07 PDT 2015')
+INSERT INTO BLOG VALUES(2,'Lekha','What is Maven? How it is useful','Maven is a build automation tool used primarily for Java projects. The word maven means accumulator of knowledge in Yiddish. Maven addresses two aspects of building software: First, it describes how software is built, and second, it describes its dependencies. Contrary to preceding tools like Apache Ant, it uses conventions for the build procedure, and only exceptions need to be written down. An XML file describes the software project being built, its dependencies on other external modules and components, the build order, directories, and required plug-ins. It comes with pre-defined targets for performing certain well-defined tasks . The Maven project is hosted by the Apache Software Foundation','Sat Oct 24 09:37:07 PDT 2015')
+INSERT INTO BLOG VALUES(3,'Mohini','What is JSP','Java Server Page (JSP) is a technology for controlling the content or appearance of Web pages through the use of servlets, small programs that are specified in the Web page and run on the Web server to modify the Web page before it is sent to the user who requested it. Sun Microsystems, the developer of Java, also refers to the JSP technology as the Servlet application program interface (API). JSP is comparable to Microsofts Active Server Page (ASP) technology. Whereas a Java Server Page calls a Java program that is executed by the Web server, an Active Server Page contains a script that is interpreted by a script interpreter (such as VBScript or JScript) before the page is sent to the user. ','Sat Oct 24 09:37:07 PDT 2015')
+COMMIT
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+ DROP TABLE IF EXISTS users 
+create table users(username varchar(30), first_name varchar(30), last_name varchar(30), email_id varchar(30), password varchar(30),primary key( username)  )
+INSERT INTO USERS VALUES('thilak','Thilak','kumar','thilak@gmail.com','kumar')
+INSERT INTO USERS VALUES('Mohini','Mohini','awhad','mohini@gmail.com','awhad')
+INSERT INTO USERS VALUES('Lekha','Lekha','sri','sri@gmail.com','sri')
+COMMIT
+DISCONNECT
+/*C6*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C9*/SET SCHEMA PUBLIC
+INSERT INTO USERS VALUES('mihir','Mihir','Thuse','mihir','mihir')
+COMMIT
+/*C7*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C9*/DISCONNECT

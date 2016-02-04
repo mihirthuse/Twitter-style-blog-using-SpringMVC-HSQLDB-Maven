@@ -1,0 +1,8 @@
+com\csuf\Model\Users.class
+com\csuf\Model\Blog.class
+com\csuf\Controller\LoginController.class
+com\csuf\Model\BlogRowMapper.class
+com\csuf\Controller\BlogController.class
+com\csuf\Dao\BlogDAO.class
+com\csuf\Dao\UserDAO.class
+com\csuf\Model\UserRowMapper.class
